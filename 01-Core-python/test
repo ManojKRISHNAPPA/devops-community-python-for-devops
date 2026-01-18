@@ -1,0 +1,90 @@
+Reservations:
+  - ReservationId: r-080df313f3298b358
+    OwnerId: "156299069385"
+    Groups: []
+    Instances:
+      - InstanceId: i-0ccceb406a72f41dc
+        ImageId: ami-07ff62358b87c7116
+        InstanceType: t3.micro
+        KeyName: devops_com
+        Architecture: x86_64
+        State:
+          Code: 16
+          Name: running
+        LaunchTime: 2026-01-18T13:41:07Z
+        PrivateIpAddress: 172.31.27.59
+        PublicIpAddress: 54.221.150.140
+        PrivateDnsName: ip-172-31-27-59.ec2.internal
+        PublicDnsName: ec2-54-221-150-140.compute-1.amazonaws.com
+        Placement:
+          AvailabilityZone: us-east-1c
+          AvailabilityZoneId: use1-az4
+          Tenancy: default
+        RootDeviceName: /dev/xvda
+        RootDeviceType: ebs
+        VirtualizationType: hvm
+        PlatformDetails: Linux/UNIX
+        BootMode: uefi-preferred
+        CurrentInstanceBootMode: uefi
+        Monitoring:
+          State: disabled
+        CpuOptions:
+          CoreCount: 1
+          ThreadsPerCore: 2
+        MetadataOptions:
+          State: applied
+          HttpEndpoint: enabled
+          HttpTokens: required
+          HttpPutResponseHopLimit: 2
+          HttpProtocolIpv6: disabled
+          InstanceMetadataTags: disabled
+        MaintenanceOptions:
+          AutoRecovery: default
+          RebootMigration: default
+        CapacityReservationSpecification:
+          CapacityReservationPreference: open
+        Tags:
+          - Key: Name
+            Value: admin
+        SecurityGroups:
+          - GroupId: sg-099ea887d8e551fe1
+            GroupName: default
+        BlockDeviceMappings:
+          - DeviceName: /dev/xvda
+            Ebs:
+              VolumeId: vol-0ea4524f9cd91e8aa
+              Status: attached
+              DeleteOnTermination: true
+              AttachTime: 2026-01-18T13:41:08Z
+        NetworkInterfaces:
+          - NetworkInterfaceId: eni-076586c4afd95724c
+            Status: in-use
+            InterfaceType: interface
+            MacAddress: 0a:ff:db:bd:4f:71
+            SubnetId: subnet-02023d36c7d54987b
+            VpcId: vpc-0091e4b6acdd2ea86
+            PrivateIpAddress: 172.31.27.59
+            PrivateDnsName: ip-172-31-27-59.ec2.internal
+            SourceDestCheck: true
+            Groups:
+              - GroupId: sg-099ea887d8e551fe1
+                GroupName: default
+            Attachment:
+              AttachmentId: eni-attach-0a6c2b8db3a533296
+              DeviceIndex: 0
+              Status: attached
+              DeleteOnTermination: true
+              AttachTime: 2026-01-18T13:41:07Z
+            Association:
+              PublicIp: 54.221.150.140
+              PublicDnsName: ec2-54-221-150-140.compute-1.amazonaws.com
+              IpOwnerId: amazon
+
+ResponseMetadata:
+  RequestId: 7fe73cf2-6810-440f-90e1-32ed72a178ca
+  HTTPStatusCode: 200
+  RetryAttempts: 0
+  HTTPHeaders:
+    content-type: text/xml;charset=UTF-8
+    server: AmazonEC2
+    date: Sun, 18 Jan 2026 13:56:34 GMT
